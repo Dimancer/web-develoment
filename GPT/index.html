@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио веб-разработчика</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a href="blog.html">Блог</a></li>
+          </ul>
+        </nav>
+        <h1 data-aos="fade-down">Портфолио веб-разработчика</h1>
+        <button class="toggle-theme">🌙</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="about" data-aos="fade-up">
+        <h2>Обо мне</h2>
+        <p>
+          Привет! Я веб-разработчик с увлечением создания красивых и
+          функциональных веб-сайтов. У меня есть опыт работы с HTML, CSS,
+          JavaScript и различными фреймворками и библиотеками.
+        </p>
+      </section>
+
+      <section id="services" data-aos="fade-up">
+        <h2>Услуги</h2>
+        <ul class="services-list">
+          <li>
+            <i class="fas fa-code"></i>
+            <h3>Веб-разработка</h3>
+            <p>Полный цикл разработки веб-сайтов, включая фронтенд и бэкенд.</p>
+          </li>
+          <li>
+            <i class="fas fa-paint-brush"></i>
+            <h3>UI/UX дизайн</h3>
+            <p>
+              Услуги настройки пользовательского интерфейса и дизайна, включая
+              создание макетов, прототипов и визуального дизайна.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-rocket"></i>
+            <h3>Оптимизация веб-сайтов</h3>
+            <p>
+              Услуги оптимизации веб-сайтов, включая улучшение скорости, SEO и
+              аудит доступности.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="portfolio" data-aos="fade-up">
+        <h2>Портфолио</h2>
+        <ul class="portfolio-list">
+          <li>
+            <div class="project-card" data-aos="zoom-in" data-project="1">
+              <img src="project1.jpg" alt="Проект 1" />
+              <h3>Проект 1</h3>
+              <p>Адаптивный веб-сайт для вымышленной компании.</p>
+            </div>
+          </li>
+          <li>
+            <div class="project-card" data-aos="zoom-in" data-project="2">
+              <img src="project2.jpg" alt="Проект 2" />
+              <h3>Проект 2</h3>
+              <p>
+                Индивидуальный дизайн пользовательского интерфейса для
+                мобильного приложения.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="project-card" data-aos="zoom-in" data-project="3">
+              <img src="project3.jpg" alt="Проект 3" />
+              <h3>Проект 3</h3>
+              <p>
+                Веб-приложение, разработанное с использованием React и Node.js.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" data-aos="fade-up">
+        <h2>Связаться со мной</h2>
+        <p>
+          Хотите обсудить проект или узнать больше о моих услугах? Не
+          стесняйтесь связаться со мной!
+        </p>
+        <form id="contact-form">
+          <input type="text" placeholder="Имя" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Сообщение" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <section id="social" data-aos="fade-up">
+        <h2>Подписаться</h2>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </section>
+
+      <section id="subscribe" data-aos="fade-up">
+        <h2>Подписаться на рассылку</h2>
+        <form id="subscribe-form">
+          <input type="email" placeholder="Ваш Email" required />
+          <button type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Название проекта</h2>
+        <img src="" alt="Изображение проекта" />
+        <p>Описание проекта</p>
+      </div>
+    </div>
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/yourprofile"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/yourprofile"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- Добавьте другие иконки и ссылки по необходимости -->
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
